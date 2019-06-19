@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sofia'), local('Sofia-Regular'), url(https://fonts.gstatic.com/s/sofia/v7/8QIHdirahM3j_su5uIg.ttf) format('truetype');
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background: #d8dee9;
+  color: #2e3440;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 2.5rem;
+  border-radius: 3px;
+}
+.header__title {
+  font-family: "Sofia", script;
+  font-size: 3rem;
+}
+.header__title--link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.header__link {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 2px 8px;
+  border-radius: 3px;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.header__link:not(:last-child) {
+  margin-right: 2rem;
+}
+.container-page {
+  max-width: 100%;
+  height: 500vh;
+  margin: 0 auto;
+}
+.cta {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  padding: 10px 20px;
+  background: #88c0d0;
+  border-radius: 3px;
+}
+.cta:hover {
+  background: #add3de;
+  transition: background-color 300ms;
+}
+.cta:active {
+  box-shadow: none;
+  transition: box-shadow 300ms;
+}
