@@ -12,6 +12,27 @@
       color: @color-link;
     }
   }
+  &__cta {
+    .link();
+    .boxShadow();
+    padding: 10px 20px;
+    margin-right: 2rem;
+    background: @bg-cta;
+    border-radius: 3px;
+    color: @color-link;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    &:hover {
+      background: @bg-cta-hover;
+      transition: background-color 300ms;
+    }
+    &:active {
+      box-shadow: none;
+      transition: box-shadow 300ms;
+    }
+  }
   &__link {
     .link();
     padding: 0 2px 8px;
@@ -23,6 +44,29 @@
     text-transform: uppercase;
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+  }
+  @media @header-tablet {
+    &__cta {
+      margin-right: 10rem;
+    }
+    &__link {
+      display: none;
+    }
+  }
+  @media @header-phone {
+    .flex(column, center, center);
+    padding: 0;
+    &__title {
+      margin: 3rem 0 2.4rem;
+      width: 100%;
+      font-size: 4rem;
+      text-align: center;
+    }
+    &__cta {
+      position: relative;
+      top: 6px;
+      margin-right: 0;
     }
   }
 }
