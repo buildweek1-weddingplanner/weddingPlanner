@@ -1,3 +1,6 @@
+// Goal: Refactor the class to include headerTransparency and headerTitleColor - one class to rule them all...
+//       Remove the hover effects - let CSS handle them
+
 class NavLink {
   constructor(element) {
     this.element = element;
