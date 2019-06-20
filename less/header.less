@@ -35,8 +35,7 @@
   }
   &__link {
     .link();
-    padding: 0 2px 8px;
-    border-radius: 3px;
+    padding: 0 2px 6px;
     color: @color-link;
     font-size: 1.6rem;
     font-weight: 600;
@@ -44,6 +43,9 @@
     text-transform: uppercase;
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+    &:hover {
+      border-bottom: 2px solid #3b4252;
     }
   }
   @media @header-tablet {
