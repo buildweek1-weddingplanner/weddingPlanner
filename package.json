@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devserver": "live-server",
-    "watch-less": "less-watch-compiler LESS CSS index.less",
+    "watch-less": "less-watch-compiler less css index.less",
     "start": "npm-run-all --parallel devserver watch-less"
   },
   "devDependencies": {
