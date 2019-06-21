@@ -180,6 +180,15 @@ body {
   font-size: 2rem;
 }
 .solution-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.solution-cards .card-selected {
+  width: 30%;
+}
+.solution-cards {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
