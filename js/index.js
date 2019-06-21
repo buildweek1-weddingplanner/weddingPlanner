@@ -21,7 +21,7 @@ const linkNav = document.querySelectorAll(`.header__link[data-tab='linkNav']`).f
 const headerTransparency = document.querySelector(".header");
 const headerTitleColor = document.querySelector(".header__title--link");
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 200 /* change to suit */) {
+  if (window.scrollY >= 10 /* change to suit */) {
     headerTransparency.style.backgroundColor = "#5e81ac"; // change color
     headerTransparency.style.transition = "background-color 500ms";
     headerTitleColor.style.color = "white";

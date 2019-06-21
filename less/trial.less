@@ -1,8 +1,10 @@
 .intro {
   margin-top: 100px;
   .flex(column, center, center);
+  
   h2{
     font-size: 4rem;
+    
     @media @mobile {
       text-align: center;
       font-size: 3.2rem;
@@ -60,17 +62,40 @@
 
 .planner-tools {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
+
   .flex(column);
   
-  h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #5e81ac;
-  }
+  .tools-pitch {
+    margin: 50px 0;
 
-  h4 {
-    font-size: 3rem;
-    font-weight: bold;
+    h5 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #5e81ac;
+    }
+
+    h4 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.icons {
+  .flex();
+
+  .icon {
+    margin: 15px;
+    
+    i {
+    .tool-icons();
+    color: #5e81ac;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
   }
 }
