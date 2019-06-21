@@ -7,7 +7,7 @@ class ScrollEffects {
     window.addEventListener("scroll", () => this.scrollEffects());
   }
   scrollEffects() {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 10) {
       this.headerBackground.style.backgroundColor = "#5e81ac";
       this.headerBackground.style.transition = "background-color 500ms";
       this.titleColor.style.color = "#e5e9f0";
@@ -26,7 +26,7 @@ class NavLink {
     window.addEventListener("scroll", () => this.scrollEffects());
   }
   scrollEffects() {
-    window.scrollY >= 200 ? (this.element.style.color = "#d8dee9") : (this.element.style.color = "#2e3440");
+    window.scrollY >= 10 ? (this.element.style.color = "#d8dee9") : (this.element.style.color = "#2e3440");
   }
 }
 
