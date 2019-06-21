@@ -2,20 +2,47 @@
   margin-top: 100px;
   .flex(column, center, center);
   h2{
-    font-size: 3.5rem;
+    font-size: 4rem;
     @media @mobile {
       text-align: center;
       font-size: 3.2rem;
     }
   }
+  
   p{
     font-size: 2rem;
   }
 }
 
 .solution-cards {
+
+  margin-top: 20px;
   .flex();
   .card-selected {
-    width: 30%;
+    padding: 10px 20px;;
+    background-color: @card;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    .card-margin();
+    
+    .card-title {
+      .card-header();
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    img {
+      border-radius: 10px;
+    
+    }
+    h3 {
+      .card-margin();
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 15px;
+    }
   }
 }

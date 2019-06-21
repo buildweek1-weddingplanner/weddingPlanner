@@ -36,6 +36,14 @@
 .width-100 {
   width: 100%;
 }
+.card-margin {
+  margin: 15px;
+}
+.card-header {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -168,9 +176,9 @@ body {
   justify-content: center;
 }
 .intro h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .intro h2 {
     text-align: center;
     font-size: 3.2rem;
@@ -180,15 +188,6 @@ body {
   font-size: 2rem;
 }
 .solution-cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.solution-cards .card-selected {
-  width: 30%;
-}
-.solution-cards {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -196,6 +195,27 @@ body {
   justify-content: center;
 }
 .solution-cards .card-selected {
-  width: 45%;
+  padding: 10px 20px;
+  background-color: #E3EEF1;
+  width: 40%;
   text-align: center;
+  border-radius: 10px;
+  margin: 15px;
+}
+.solution-cards .card-selected .card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.solution-cards .card-selected img {
+  border-radius: 10px;
+}
+.solution-cards .card-selected h3 {
+  margin: 15px;
+  font-size: 2rem;
+}
+.solution-cards .card-selected p {
+  line-height: 15px;
 }
