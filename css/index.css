@@ -36,6 +36,21 @@
 .width-100 {
   width: 100%;
 }
+.card-margin {
+  margin: 15px;
+}
+.card-header {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+}
+.tool-icons {
+  font-size: 2.5rem;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -168,9 +183,9 @@ body {
   justify-content: center;
 }
 .intro h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .intro h2 {
     text-align: center;
     font-size: 3.2rem;
@@ -186,7 +201,84 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .solution-cards {
+    flex-direction: column;
+  }
+}
 .solution-cards .card-selected {
-  width: 45%;
+  padding: 10px 20px;
+  background-color: #E3EEF1;
+  width: 40%;
   text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5e81ac;
+  margin: 15px;
+}
+@media (max-width: 500px) {
+  .solution-cards .card-selected {
+    width: 95%;
+  }
+}
+.solution-cards .card-selected .card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.solution-cards .card-selected img {
+  border-radius: 10px;
+}
+.solution-cards .card-selected h3 {
+  margin: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+  font-size: 2rem;
+}
+.solution-cards .card-selected p {
+  line-height: 17px;
+  font-size: 1.5rem;
+}
+.planner-tools {
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.planner-tools .tools-pitch {
+  margin: 50px 0;
+}
+.planner-tools .tools-pitch h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5e81ac;
+}
+.planner-tools .tools-pitch h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icons .icon {
+  margin: 15px;
+}
+.icons .icon i {
+  font-size: 2.5rem;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  color: #5e81ac;
+}
+.icons .icon p {
+  font-weight: bold;
+  font-size: 1.3rem;
 }

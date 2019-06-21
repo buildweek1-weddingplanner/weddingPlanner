@@ -1,16 +1,101 @@
 .intro {
   margin-top: 100px;
   .flex(column, center, center);
+  
   h2{
-    font-size: 3.5rem;
+    font-size: 4rem;
+    
     @media @mobile {
       text-align: center;
       font-size: 3.2rem;
     }
   }
+  
   p{
     font-size: 2rem;
   }
+}
 
+.solution-cards {
 
+  margin-top: 20px;
+  .flex();
+
+  @media @mobile {
+    flex-direction: column;
+  }
+  .card-selected {
+    padding: 10px 20px;;
+    background-color: @card;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #5e81ac;
+
+    @media @mobile {
+      width: 95%;
+    }
+    .card-margin();
+    
+    .card-title {
+      .card-header();
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    img {
+      border-radius: 10px;
+    
+    }
+    h3 {
+      .card-margin();
+      .card-header();
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 17px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.planner-tools {
+  text-align: center;
+  margin-top: 70px;
+
+  .flex(column);
+  
+  .tools-pitch {
+    margin: 50px 0;
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #5e81ac;
+    }
+
+    h4 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.icons {
+  .flex();
+
+  .icon {
+    margin: 15px;
+    
+    i {
+    .tool-icons();
+    color: #5e81ac;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
 }
