@@ -194,13 +194,24 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .solution-cards {
+    flex-direction: column;
+  }
+}
 .solution-cards .card-selected {
   padding: 10px 20px;
   background-color: #E3EEF1;
   width: 40%;
   text-align: center;
   border-radius: 10px;
+  border: 1px solid #5e81ac;
   margin: 15px;
+}
+@media (max-width: 500px) {
+  .solution-cards .card-selected {
+    width: 95%;
+  }
 }
 .solution-cards .card-selected .card-title {
   font-size: 1.7rem;
@@ -214,8 +225,12 @@ body {
 }
 .solution-cards .card-selected h3 {
   margin: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
   font-size: 2rem;
 }
 .solution-cards .card-selected p {
-  line-height: 15px;
+  line-height: 17px;
+  font-size: 1.5rem;
 }
