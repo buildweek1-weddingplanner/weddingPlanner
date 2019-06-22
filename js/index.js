@@ -32,7 +32,6 @@ class NavLink {
 
 const scroll = document.querySelectorAll(".container-page").forEach(scroll => new ScrollEffects(scroll));
 
-
 const navSlide = () => {
   const burger = document.querySelector(".header__burger");
   const nav = document.querySelector(".header__nav");
@@ -47,4 +46,3 @@ const navSlide = () => {
 };
 
 navSlide();
-
