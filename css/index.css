@@ -1,3 +1,4 @@
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -7,7 +8,59 @@
     opacity: 1;
     transform: translateX(0);
   }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sofia'), local('Sofia-Regular'), url(https://fonts.gstatic.com/s/sofia/v7/8QIHdirahM3j_su5uIg.ttf) format('truetype');
+}
+
+.width-100 {
+  width: 100%;
+}
+.card-margin {
+  margin: 15px;
+}
+.card-header {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+}
+.tool-icons {
+  font-size: 2.5rem;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -311,12 +364,14 @@ body {
     width: 100%;
   }
 }
+
 .landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .container-section {
   width: 90%;
 }
@@ -344,6 +399,7 @@ body {
   }
 }
 .container-card {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
