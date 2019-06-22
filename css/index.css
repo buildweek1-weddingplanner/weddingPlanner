@@ -52,6 +52,21 @@
   justify-content: center;
   text-align: center;
 }
+.h1-font {
+  font-size: 4rem;
+}
+.header-p-font {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.h4-style {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.h5-style {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -379,15 +394,15 @@ body {
     padding: 0 15px;
   }
 }
-.trial-intro h2 {
+.trial-intro h1 {
   font-size: 4rem;
 }
-.trial-intro h2 span {
+.trial-intro h1 span {
   color: #5e81ac;
   text-decoration: underline;
 }
 @media (max-width: 500px) {
-  .trial-intro h2 {
+  .trial-intro h1 {
     font-size: 3.2rem;
   }
 }
@@ -488,4 +503,70 @@ body {
 .icons .icon p {
   font-weight: bold;
   font-size: 1.3rem;
+}
+.testimonials-intro {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.testimonials-intro h1 {
+  font-size: 4rem;
+}
+.testimonials-intro p {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.testimonials-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.testimonials-btn button {
+  margin-right: 20px;
+  width: 20rem;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.testimonials-btn .try-btn {
+  background-color: transparent;
+  border-color: black;
+}
+.review-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.review-intro h2 {
+  width: 60%;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 25px;
+  border-bottom: 1px solid #5e81ac;
+  padding-bottom: 30px;
+}
+.review-intro h2 span {
+  color: #5e81ac;
+}
+.review-intro .overall-rating {
+  padding-top: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+.review-intro .overall-rating i {
+  color: #FFCD17;
+  font-size: 1.8rem;
+}
+.review-intro .overall-rating h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.review-intro .overall-rating p {
+  font-size: 1.6rem;
 }
