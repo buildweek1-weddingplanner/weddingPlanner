@@ -1,18 +1,27 @@
-.intro {
-  margin-top: 100px;
-  .flex(column, center, center);
+.trial-intro {
+  .page-intro();
   
-  h2{
-    font-size: 4rem;
-    
+
+  @media @mobile {
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+  
+  h1{
+    .h1-font();
+
+    span {
+      color: #5e81ac;
+      text-decoration: underline;
+    }
+
     @media @mobile {
-      text-align: center;
       font-size: 3.2rem;
     }
   }
   
   p{
-    font-size: 2rem;
+    .header-p-font();
   }
 }
 
@@ -33,7 +42,7 @@
     border: 1px solid #5e81ac;
 
     @media @mobile {
-      width: 95%;
+      width: 80%;
     }
     .card-margin();
     
@@ -64,10 +73,15 @@
   text-align: center;
   margin-top: 70px;
 
+  @media @mobile {
+    margin-top: 0px;
+  }
+
   .flex(column);
   
   .tools-pitch {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 15px;
 
     h5 {
       font-size: 1.5rem;
