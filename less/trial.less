@@ -34,22 +34,24 @@
     flex-direction: column;
   }
   .card-selected {
-    padding: 10px 20px;;
+    padding: 30px 30px;;
     background-color: @card;
-    width: 40%;
+    width: 25%;
     text-align: center;
     border-radius: 10px;
     border: 1px solid #5e81ac;
+    margin: 0 30px;
+    overflow: hidden;
+    height: 380px;
+  
 
     @media @mobile {
       width: 80%;
     }
-    .card-margin();
     
     .card-title {
       .card-header();
       margin-bottom: 15px;
-      font-size: 2rem;
     }
 
     img {
@@ -57,16 +59,23 @@
     
     }
     h3 {
-      .card-margin();
       .card-header();
-      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    .card-buttons {
+      margin-bottom: 20px;
     }
 
     p {
-      line-height: 17px;
-      font-size: 1.5rem;
+      line-height: 22px;
+      font-size: 1.9rem;
     }
   }
+}
+
+.card-open {
+  height: 740px;
 }
 
 .planner-tools {
