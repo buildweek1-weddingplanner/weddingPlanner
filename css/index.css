@@ -523,7 +523,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 @media (max-width: 500px) {
@@ -531,7 +531,7 @@ body {
     flex-direction: column;
   }
 }
-.solution-cards .card-selected {
+.card-selected {
   padding: 30px 30px;
   background-color: #E3EEF1;
   width: 25%;
@@ -540,37 +540,47 @@ body {
   border: 1px solid #5e81ac;
   margin: 0 30px;
   overflow: hidden;
-  height: 380px;
+  height: 400px;
+  transition: all 600ms ease;
 }
 @media (max-width: 500px) {
-  .solution-cards .card-selected {
+  .card-selected {
     width: 80%;
   }
 }
-.solution-cards .card-selected .card-title {
+.card-selected .card-title {
   font-size: 3rem;
   font-weight: bold;
   color: #88c0d0;
   margin-bottom: 15px;
 }
-.solution-cards .card-selected img {
+.card-selected img {
   border-radius: 10px;
 }
-.solution-cards .card-selected h3 {
+.card-selected h3 {
   font-size: 3rem;
   font-weight: bold;
   color: #88c0d0;
   margin: 20px 0;
 }
-.solution-cards .card-selected .card-buttons {
-  margin-bottom: 20px;
+.card-selected .card-button {
+  font-size: 1.3rem;
+  cursor: pointer;
 }
-.solution-cards .card-selected p {
+.card-selected p {
+  margin-top: 30px;
   line-height: 22px;
   font-size: 1.9rem;
 }
-.card-open {
-  height: 740px;
+.close {
+  margin-top: 15px;
+}
+.open-card {
+  height: 650px;
+  transition: all 600ms ease;
+}
+.hide-btn {
+  display: none;
 }
 .planner-tools {
   text-align: center;

@@ -28,54 +28,64 @@
 .solution-cards {
 
   margin-top: 20px;
-  .flex();
+  .flex(row, flex-start, center);
 
   @media @mobile {
     flex-direction: column;
   }
-  .card-selected {
-    padding: 30px 30px;;
-    background-color: @card;
-    width: 25%;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #5e81ac;
-    margin: 0 30px;
-    overflow: hidden;
-    height: 380px;
-  
-
-    @media @mobile {
-      width: 80%;
-    }
-    
-    .card-title {
-      .card-header();
-      margin-bottom: 15px;
-    }
-
-    img {
-      border-radius: 10px;
-    
-    }
-    h3 {
-      .card-header();
-      margin: 20px 0;
-    }
-
-    .card-buttons {
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 22px;
-      font-size: 1.9rem;
-    }
-  }
 }
 
-.card-open {
-  height: 740px;
+.card-selected {
+  padding: 30px 30px;;
+  background-color: @card;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5e81ac;
+  margin: 0 30px;
+  overflow: hidden;
+  height: 400px;
+  transition: all 600ms ease;
+
+
+  @media @mobile {
+    width: 80%;
+  }
+  
+  .card-title {
+    .card-header();
+    margin-bottom: 15px;
+  }
+
+  img {
+    border-radius: 10px;
+  
+  }
+  h3 {
+    .card-header();
+    margin: 20px 0;
+  }
+
+  .card-button {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 30px;
+    line-height: 22px;
+    font-size: 1.9rem;
+  }
+}
+.close {
+  margin-top: 15px;
+}
+.open-card {
+  height: 650px;
+  transition: all 600ms ease;
+}
+.hide-btn {
+  display: none;
 }
 
 .planner-tools {
@@ -122,3 +132,4 @@
     }
   }
 }
+
