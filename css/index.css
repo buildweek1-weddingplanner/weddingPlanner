@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("Raleway Light"), local("Raleway-Light"), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format("truetype");
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format("truetype");
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format("truetype");
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Sofia";
+  font-family: 'Sofia';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Sofia"), local("Sofia-Regular"), url(https://fonts.gstatic.com/s/sofia/v7/8QIHdirahM3j_su5uIg.ttf) format("truetype");
+  src: local('Sofia'), local('Sofia-Regular'), url(https://fonts.gstatic.com/s/sofia/v7/8QIHdirahM3j_su5uIg.ttf) format('truetype');
 }
 .width-100 {
   width: 100%;
@@ -380,23 +380,12 @@ body {
     width: 100%;
   }
 }
-
 .landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.trial-intro {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .container-section {
   width: 90%;
 }
@@ -424,7 +413,6 @@ body {
   }
 }
 .container-card {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -438,52 +426,13 @@ body {
   .container-card {
     margin-top: 50px;
   }
-} 
- 
-@media (max-width: 500px) {
-  .trial-intro {
-    margin-top: 25px;
-    padding: 0 15px;
-  }
 }
-.trial-intro h1 {
-  font-size: 4rem;
-}
-.trial-intro h1 span {
-  color: #5e81ac;
-  text-decoration: underline;
-}
-@media (max-width: 500px) {
-  .trial-intro h1 {
-    font-size: 3.2rem;
-  }
-}
-.trial-intro p {
-  margin-top: 10px;
-  font-size: 1.8rem;
-}
-
-
 @media (max-width: 675px) {
   .container-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-.solution-cards .card-selected {
-  padding: 10px 20px;
-  background-color: #e3eef1;
-  width: 40%;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #5e81ac;
-  margin: 15px;
-}
-@media (max-width: 500px) {
-  .solution-cards .card-selected {
-    width: 80%;
-
   }
 }
 .card-landing {
@@ -497,19 +446,8 @@ body {
   border: 1px solid black;
   border-radius: 5px;
 }
-
 .card-landing__img {
   border-bottom: 1px solid black;
-
-@media (max-width: 500px) {
-  .planner-tools {
-    margin-top: 0px;
-  }
-}
-.planner-tools .tools-pitch {
-  margin-top: 50px;
-  margin-bottom: 15px;
-
 }
 .card-landing__text {
   text-align: center;
@@ -553,6 +491,130 @@ body {
   .card-landing:not(:last-child) {
     margin-right: 0;
   }
+}
+.trial-intro {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .trial-intro {
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+}
+.trial-intro h1 {
+  font-size: 4rem;
+}
+.trial-intro h1 span {
+  color: #5e81ac;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .trial-intro h1 {
+    font-size: 3.2rem;
+  }
+}
+.trial-intro p {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.solution-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .solution-cards {
+    flex-direction: column;
+  }
+}
+.solution-cards .card-selected {
+  padding: 10px 20px;
+  background-color: #E3EEF1;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5e81ac;
+  margin: 15px;
+}
+@media (max-width: 500px) {
+  .solution-cards .card-selected {
+    width: 80%;
+  }
+}
+.solution-cards .card-selected .card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.solution-cards .card-selected img {
+  border-radius: 10px;
+}
+.solution-cards .card-selected h3 {
+  margin: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #88c0d0;
+  font-size: 2rem;
+}
+.solution-cards .card-selected p {
+  line-height: 17px;
+  font-size: 1.5rem;
+}
+.planner-tools {
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .planner-tools {
+    margin-top: 0px;
+  }
+}
+.planner-tools .tools-pitch {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.planner-tools .tools-pitch h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5e81ac;
+}
+.planner-tools .tools-pitch h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icons .icon {
+  margin: 15px;
+}
+.icons .icon i {
+  font-size: 2.5rem;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  color: #5e81ac;
+}
+.icons .icon p {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 .testimonials-intro {
   margin-top: 100px;
@@ -610,7 +672,7 @@ body {
   line-height: 20px;
 }
 .review-intro .overall-rating i {
-  color: #ffcd17;
+  color: #FFCD17;
   font-size: 1.8rem;
 }
 .review-intro .overall-rating h3 {
