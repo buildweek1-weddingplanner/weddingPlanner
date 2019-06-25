@@ -380,6 +380,14 @@ body {
     width: 100%;
   }
 }
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .trial-intro {
   margin-top: 100px;
   display: flex;
@@ -388,6 +396,50 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.container-section {
+  width: 90%;
+}
+@media (max-width: 1185px) {
+  .container-section {
+    width: 100%;
+  }
+}
+.welcome {
+  padding: 0 30px 30px;
+}
+.welcome__header {
+  text-align: center;
+}
+.welcome__header--title {
+  margin-bottom: 50px;
+  font-size: 5rem;
+}
+.welcome__header--text {
+  font-size: 3rem;
+}
+@media (max-width: 700px) {
+  .welcome {
+    margin-top: 50px;
+  }
+}
+.container-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -180px;
+}
+@media (max-width: 985px) {
+  .container-card {
+    margin-top: 50px;
+  }
+} 
+ 
 @media (max-width: 500px) {
   .trial-intro {
     margin-top: 25px;
@@ -410,18 +462,15 @@ body {
   margin-top: 10px;
   font-size: 1.8rem;
 }
-.solution-cards {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .solution-cards {
+
+
+@media (max-width: 675px) {
+  .container-card {
+    display: flex;
     flex-direction: column;
-  }
-}
+    align-items: center;
+    justify-content: center;
+
 .solution-cards .card-selected {
   padding: 10px 20px;
   background-color: #e3eef1;
@@ -434,37 +483,24 @@ body {
 @media (max-width: 500px) {
   .solution-cards .card-selected {
     width: 80%;
+
   }
 }
-.solution-cards .card-selected .card-title {
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #88c0d0;
-  margin-bottom: 15px;
-  font-size: 2rem;
-}
-.solution-cards .card-selected img {
-  border-radius: 10px;
-}
-.solution-cards .card-selected h3 {
-  margin: 15px;
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #88c0d0;
-  font-size: 2rem;
-}
-.solution-cards .card-selected p {
-  line-height: 17px;
-  font-size: 1.5rem;
-}
-.planner-tools {
-  text-align: center;
-  margin-top: 70px;
+.card-landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  width: 300px;
+  min-width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
+
+.card-landing__img {
+  border-bottom: 1px solid black;
+
 @media (max-width: 500px) {
   .planner-tools {
     margin-top: 0px;
@@ -473,36 +509,50 @@ body {
 .planner-tools .tools-pitch {
   margin-top: 50px;
   margin-bottom: 15px;
+
 }
-.planner-tools .tools-pitch h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #5e81ac;
+.card-landing__text {
+  text-align: center;
 }
-.planner-tools .tools-pitch h4 {
-  font-size: 3rem;
-  font-weight: bold;
+.card-landing__text--title {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
 }
-.icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.card-landing__text--copy {
+  padding: 20px;
+  font-size: 2rem;
 }
-.icons .icon {
-  margin: 15px;
+.card-landing:nth-child(2) {
+  margin-top: 240px;
 }
-.icons .icon i {
-  font-size: 2.5rem;
-  padding: 18px;
-  background-color: white;
-  border-radius: 50px;
-  margin-bottom: 10px;
-  color: #5e81ac;
+.card-landing:nth-child(3) {
+  margin-top: 480px;
 }
-.icons .icon p {
-  font-weight: bold;
-  font-size: 1.3rem;
+.card-landing:not(:last-child) {
+  margin-right: 50px;
+}
+@media (max-width: 1075px) {
+  .card-landing:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 985px) {
+  .card-landing:nth-child(2) {
+    margin-top: 0;
+  }
+  .card-landing:nth-child(3) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 675px) {
+  .card-landing:nth-child(2),
+  .card-landing:nth-child(3) {
+    margin-top: 20px;
+  }
+  .card-landing:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .testimonials-intro {
   margin-top: 100px;
