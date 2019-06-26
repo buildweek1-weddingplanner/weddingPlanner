@@ -18,6 +18,10 @@
     width: 20rem;
     padding: 10px 0;
     border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   .try-btn {
@@ -35,7 +39,6 @@
     font-size: 2rem;
     text-align: center;
     line-height: 25px;
-    // border-bottom: 1px solid #5e81ac;
     padding-bottom: 30px;
 
     span {
@@ -63,6 +66,42 @@
 
     p {
       font-size: 1.6rem;
+    }
+  }
+}
+
+.reviews {
+  .flex(row, flex-start, space-evenly);
+  flex-wrap: wrap;
+  
+  margin: 20px auto;
+  width: 80%;
+  padding: 40px 0;
+  border-bottom: 1px dashed #5e81ac;
+  
+
+  .review {
+    margin: 0 15px;
+    font-size: 1.6rem;
+    width: 27%;
+    padding-bottom: 20px;
+    line-height: 1.9rem;
+
+    .star-rating {
+      color: @stars;
+      padding-bottom: 10px;
+    }
+
+    i.quote {
+      color: @bg-cta;
+      font-size: 1rem;
+      vertical-align: text-top;
+    }
+
+    .customer {
+      font-weight: bold;
+      text-align: right;
+      color: #5e81ac;
     }
   }
 }

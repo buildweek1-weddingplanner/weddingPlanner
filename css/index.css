@@ -670,6 +670,9 @@ body {
   padding: 10px 0;
   border-radius: 5px;
 }
+.testimonials-btn button:hover {
+  cursor: pointer;
+}
 .testimonials-btn .try-btn {
   background-color: transparent;
   border-color: black;
@@ -710,6 +713,38 @@ body {
 .review-intro .overall-rating p {
   font-size: 1.6rem;
 }
+.reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 80%;
+  padding: 40px 0;
+  border-bottom: 1px dashed #5e81ac;
+}
+.reviews .review {
+  margin: 0 15px;
+  font-size: 1.6rem;
+  width: 27%;
+  padding-bottom: 20px;
+  line-height: 1.9rem;
+}
+.reviews .review .star-rating {
+  color: #FFCD17;
+  padding-bottom: 10px;
+}
+.reviews .review i.quote {
+  color: #88c0d0;
+  font-size: 1rem;
+  vertical-align: text-top;
+}
+.reviews .review .customer {
+  font-weight: bold;
+  text-align: right;
+  color: #5e81ac;
+}
 .footer-categories {
   display: flex;
   flex-direction: row;
@@ -720,6 +755,7 @@ body {
 .footer-categories .category h5 {
   font-weight: bold;
   font-size: 1.8rem;
+  text-decoration: underline;
 }
 .footer-categories .category li {
   margin: 20px 0;
