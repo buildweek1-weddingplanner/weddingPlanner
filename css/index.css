@@ -505,6 +505,7 @@ body {
 }
 .trial-intro h1 {
   font-size: 4rem;
+  margin-top: 50px;
 }
 .trial-intro h1 span {
   color: #5e81ac;
@@ -529,9 +530,11 @@ body {
 @media (max-width: 500px) {
   .solution-cards {
     flex-direction: column;
+    margin: 50px 0;
   }
 }
 .card-selected {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   padding: 30px 30px;
   background-color: #E3EEF1;
   width: 25%;
@@ -546,6 +549,7 @@ body {
 @media (max-width: 500px) {
   .card-selected {
     width: 80%;
+    margin: 20px auto;
   }
 }
 .card-selected .card-title {
@@ -566,6 +570,9 @@ body {
 .card-selected .card-button {
   font-size: 1.3rem;
   cursor: pointer;
+}
+.card-selected .card-button:hover {
+  text-decoration: underline;
 }
 .card-selected p {
   margin-top: 30px;
@@ -626,6 +633,7 @@ body {
   background-color: white;
   border-radius: 50px;
   margin-bottom: 10px;
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   color: #5e81ac;
 }
 .icons .icon p {

@@ -9,6 +9,7 @@
   
   h1{
     .h1-font();
+    margin-top: 50px;
 
     span {
       color: #5e81ac;
@@ -31,10 +32,12 @@
 
   @media @mobile {
     flex-direction: column;
+    margin: 50px 0;
   }
 }
 
 .card-selected {
+  .boxShadow();
   padding: 30px 30px;;
   background-color: @card;
   width: 25%;
@@ -49,6 +52,7 @@
 
   @media @mobile {
     width: 80%;
+    margin: 20px auto;
   }
   
   .card-title {
@@ -68,6 +72,10 @@
   .card-button {
     font-size: 1.3rem;
     cursor: pointer;
+    
+    &:hover {
+    text-decoration: underline;
+    }
   }
 
   p {
@@ -125,7 +133,10 @@
     
     i {
     .tool-icons();
+    .boxShadow();
+
     color: #5e81ac;
+    
     }
 
     p {
