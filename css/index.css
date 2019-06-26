@@ -682,3 +682,64 @@ body {
 .review-intro .overall-rating p {
   font-size: 1.6rem;
 }
+.container-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 5rem auto 0;
+}
+.blurb {
+  background: orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 2rem;
+}
+.blurb__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.blurb__copy {
+  width: 70%;
+  font-size: 2rem;
+}
+.contact {
+  width: 40%;
+  padding: 2rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact__label {
+  font-size: 2rem;
+}
+.contact__input {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  height: 2rem;
+  width: 30rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+.contact__msg {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  height: 20rem;
+  width: 40rem;
+  border-radius: 5px;
+}
+.contact__btns {
+  margin-top: 2rem;
+}
