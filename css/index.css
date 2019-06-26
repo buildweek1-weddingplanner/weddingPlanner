@@ -272,7 +272,7 @@ body {
   color: black;
   font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.5;
   text-transform: uppercase;
 }
 .header__link:not(:last-child) {
@@ -329,8 +329,7 @@ body {
     justify-content: space-evenly;
     position: fixed;
     right: 0;
-    top: 25vh;
-    height: 75vh;
+    top: 10rem;
     width: 50%;
     padding: 0;
     background: #4c566a;
@@ -377,6 +376,7 @@ body {
     width: 90%;
   }
   .header__nav {
+    top: 20rem;
     width: 100%;
   }
 }
@@ -385,6 +385,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
 }
 .container-section {
   width: 90%;
@@ -536,7 +537,7 @@ body {
 }
 .solution-cards .card-selected {
   padding: 10px 20px;
-  background-color: #E3EEF1;
+  background-color: #e3eef1;
   width: 40%;
   text-align: center;
   border-radius: 10px;
@@ -672,7 +673,7 @@ body {
   line-height: 20px;
 }
 .review-intro .overall-rating i {
-  color: #FFCD17;
+  color: #ffcd17;
   font-size: 1.8rem;
 }
 .review-intro .overall-rating h3 {
@@ -683,21 +684,36 @@ body {
   font-size: 1.6rem;
 }
 .container-contact {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 5rem;
   margin: 5rem auto 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+@media (max-width: 950px) {
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .container-contact {
+    border: none;
+  }
 }
 .blurb {
-  background: orangered;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  padding: 2rem;
+  width: 50%;
 }
 .blurb__title {
   margin-bottom: 3rem;
@@ -707,10 +723,21 @@ body {
 .blurb__copy {
   width: 70%;
   font-size: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 550px) {
+  .blurb__copy {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .blurb {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 .contact {
-  width: 40%;
-  padding: 2rem;
+  width: 50%;
 }
 .contact__form {
   display: flex;
@@ -724,22 +751,73 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+@media (max-width: 450px) {
+  .contact__field {
+    align-items: center;
+  }
+}
 .contact__label {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+@media (max-width: 450px) {
+  .contact__label {
+    align-self: flex-start;
+  }
+}
+.contact__input,
+.contact__msg {
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  padding: 1rem;
+  border-radius: 5px;
   font-size: 2rem;
 }
 .contact__input {
-  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   height: 2rem;
   width: 30rem;
   margin-bottom: 2rem;
-  border-radius: 5px;
 }
 .contact__msg {
   box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   height: 20rem;
   width: 40rem;
-  border-radius: 5px;
+}
+@media (max-width: 450px) {
+  .contact__msg {
+    width: 30rem;
+  }
 }
 .contact__btns {
   margin-top: 2rem;
+}
+.contact__btn {
+  all: unset;
+  box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
+  padding: 1rem 2rem;
+  background: #88c0d0;
+  font-size: 2rem;
+}
+.contact__btn:not(:last-child) {
+  margin-right: 4rem;
+}
+.contact__btn:hover {
+  background: #add3de;
+  transition: background-color 300ms;
+}
+.contact__btn:active {
+  box-shadow: none;
+  transition: box-shadow 300ms;
+}
+@media (max-width: 950px) {
+  .contact {
+    width: 100%;
+  }
+}
+.thanks {
+  width: 100%;
+  margin-top: 15rem;
+  text-align: center;
+}
+.thanks__copy {
+  font-size: 4rem;
 }
