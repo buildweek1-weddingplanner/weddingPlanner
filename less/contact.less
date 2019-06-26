@@ -1,0 +1,52 @@
+.container-contact {
+  .flex(row, center, space-between);
+  width: 60%;
+  margin: 5rem auto 0;
+}
+
+.blurb {
+  background: orangered;
+  .flex(column);
+  width: 60%;
+  padding: 2rem;
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__copy {
+    width: 70%;
+    font-size: 2rem;
+  }
+}
+
+.contact {
+  // background: yellowgreen;
+  width: 40%;
+  padding: 2rem;
+  &__form {
+    .flex(column);
+  }
+  &__field {
+    .flex(column, flex-start);
+  }
+  &__label {
+    font-size: 2rem;
+  }
+  &__input {
+    .boxShadow();
+    height: 2rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  &__msg {
+    .boxShadow();
+    height: 20rem;
+    width: 40rem;
+    border-radius: 5px;
+  }
+  &__btns {
+    margin-top: 2rem;
+  }
+}
