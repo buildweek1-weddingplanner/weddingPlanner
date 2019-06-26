@@ -10,14 +10,14 @@
   <body>
     <div class="container-page">
       <header class="header">
-        <h1 class="header__title"><a href="index.html" class="header__title--link">The Wedding Planner</a></h1>
+        <a href="index.html" class="header__title">The Wedding Planner</a>
         <div class="header__phone">
-          <a href="#" class="header__cta">free trial</a>
+          <a href="trial.html" class="header__cta">free trial</a>
           <div class="header__container-nav">
             <nav class="header__nav">
-              <a href="#" class="header__link" data-tab="linkNav">contact</a>
-              <a href="#" class="header__link" data-tab="linkNav">testimonials</a>
-              <a href="#" class="header__link" data-tab="linkNav">sign in</a>
+              <a class="header__link" data-tab="linkNav" href="contact.html">contact</a>
+              <a class="header__link" data-tab="linkNav" href="testimonials.html">testimonials</a>
+              <a class="header__link" data-tab="linkNav" href="#">sign in</a></<a>
             </nav>
             <div class="header__burger">
               <div class="header__burger--top"></div>
@@ -28,7 +28,30 @@
         </div>
       </header>
     </div>
-
+    <main class="container-contact">
+      <div class="blurb">
+        <h2 class="blurb__title">Lorem Ipsum</h2>
+        <p class="blurb__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam reiciendis aliquam sunt nulla libero culpa optio vitae omnis ex consectetur dicta necessitatibus cupiditate consequuntur molestiae exercitationem saepe aperiam id?</p>
+      </div>
+      <div class="contact">
+        <form action="#" method="POST" class="contact__form">
+          <div class="contact__container-inputs">
+            <div class="contact__field">
+              <label for="name" class="contact__label">Name</label>
+              <input type="text" id="name" name="name" class="contact__input">
+              <label for="mail" class="contact__label">Email:</label>
+              <input type="email" id="mail" name="mail" class="contact__input">
+              <label for="msg" class="contact__label">Message:</label>
+              <textarea name="msg" id="msg" class="contact__msg"></textarea>    
+            </div>
+          </div>
+          <div class="contact__btns">
+            <button type="submit">Send Message</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>    
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>
