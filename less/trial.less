@@ -9,6 +9,7 @@
   
   h1{
     .h1-font();
+    margin-top: 50px;
 
     span {
       color: #5e81ac;
@@ -26,62 +27,93 @@
 }
 
 .solution-cards {
-
-  margin-top: 20px;
-  .flex();
+  margin: 100px 0;
+  .flex(row, flex-start, center);
 
   @media @mobile {
     flex-direction: column;
-  }
-  .card-selected {
-    padding: 10px 20px;;
-    background-color: @card;
-    width: 40%;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #5e81ac;
-
-    @media @mobile {
-      width: 80%;
-    }
-    .card-margin();
-    
-    .card-title {
-      .card-header();
-      margin-bottom: 15px;
-      font-size: 2rem;
-    }
-
-    img {
-      border-radius: 10px;
-    
-    }
-    h3 {
-      .card-margin();
-      .card-header();
-      font-size: 2rem;
-    }
-
-    p {
-      line-height: 17px;
-      font-size: 1.5rem;
-    }
+    margin: 50px 0;
   }
 }
 
-.planner-tools {
+.card-selected {
+  .boxShadow();
+  padding: 30px 30px;;
+  background-color: @card;
+  width: 25%;
   text-align: center;
-  margin-top: 70px;
+  border-radius: 10px;
+  border: 1px solid #5e81ac;
+  margin: 0 30px;
+  overflow: hidden;
+  height: 400px;
+  transition: all 600ms ease;
+
+
+  @media @mobile {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .card-title {
+    .card-header();
+    margin-bottom: 15px;
+  }
+
+  img {
+    border-radius: 10px;
+  
+  }
+  h3 {
+    .card-header();
+    margin: 20px 0;
+  }
+
+  .card-button {
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+    &:hover {
+    text-decoration: underline;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    line-height: 22px;
+    font-size: 1.9rem;
+  }
+}
+.close {
+  margin-top: 15px;
+}
+.open-card {
+  height: 650px;
+  transition: all 600ms ease;
+}
+.hide-btn {
+  display: none;
+}
+
+.planner-tools {
+  .flex(column);
+
+  text-align: center;
+  margin: 60px auto;
+  padding-bottom: 60px;
+  width: 80%;
+  border-top: 1px dashed #5e81ac;
+  border-bottom: 1px dashed #5e81ac;
 
   @media @mobile {
     margin-top: 0px;
   }
-
-  .flex(column);
   
   .tools-pitch {
-    margin-top: 50px;
+    width: 75%;
+    padding-top: 60px;
     margin-bottom: 15px;
+ 
 
     h5 {
       font-size: 1.5rem;
@@ -104,7 +136,10 @@
     
     i {
     .tool-icons();
+    .boxShadow();
+
     color: #5e81ac;
+    
     }
 
     p {
@@ -113,3 +148,4 @@
     }
   }
 }
+
