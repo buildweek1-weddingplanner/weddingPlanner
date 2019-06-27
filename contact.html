@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Wedding Planner</title>
     <link href="/css/index.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f1054c5b39.js"></script>
   </head>
   <body>
     <div class="container-page">
@@ -27,31 +28,59 @@
           </div>
         </div>
       </header>
-      <main class="container-contact">
-        <div class="blurb">
-          <h2 class="blurb__title">Lorem Ipsum</h2>
-          <p class="blurb__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam reiciendis aliquam sunt nulla libero culpa optio vitae omnis ex consectetur dicta necessitatibus cupiditate consequuntur molestiae exercitationem saepe aperiam id?</p>
-        </div>
-        <div class="contact">
-          <form action="thanks.html" method="GET" class="contact__form">
-            <div class="contact__container-inputs">
-              <div class="contact__field">
-                <label for="firstName" class="contact__label">First Name</label>
-                <input type="text" id="firstName" name="firstName" class="contact__input">
-                <label for="lastName" class="contact__label">Last Name</label>
-                <input type="text" id="lastName" name="lastName" class="contact__input">
-                <label for="mail" class="contact__label">Email</label>
-                <input type="email" id="mail" name="mail" class="contact__input">
-                <label for="msg" class="contact__label">Message</label>
-                <textarea name="msg" id="msg" class="contact__msg"></textarea>    
+      <main class="main-contact">
+        <section class="about">
+          <h2 class="about__title">Meet Your New Team</h2>
+          <div class="about__team">
+            <div class="about__teamMember">
+              <img src="https://picsum.photos/400" alt="Danica Valdez" class="about__img">
+              <div class="about__name">Danica Valdez</div>
+              <div class="about__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+              <div class="about__socials">
+                <a href="#" class="about__socials--btn">
+                  <i class="about__socials--icon fab fa-github"></i>
+                  <div class="about__socials--text">GitHub</div>
+                </a>
+                <a href="#" class="about__socials--btn">
+                  <i class="about__socials--icon fab fa-github"></i>
+                  <div class="about__socials--text">GitHub</div>
+                </a>            
               </div>
             </div>
+            <div class="about__teamMember">
+              <img src="https://picsum.photos/400" alt="Jason Loomis" class="about__img">
+              <div class="about__name">Jason Loomis</div>
+              <div class="about__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+              <div class="about__socials">
+                <a href="#" class="about__socials--btn">
+                  <i class="about__socials--icon fab fa-github"></i>
+                  <div class="about__socials--text">GitHub</div>
+                </a>
+                <a href="#" class="about__socials--btn">
+                  <i class="about__socials--icon fab fa-github"></i>
+                  <div class="about__socials--text">GitHub</div>
+                </a>            
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <h2 class="contact__title">We'd Love to Hear From You!</h2>
+          <form action="thanks.html" method="GET" class="contact__form">  
+            <label for="firstName" class="contact__form--label">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="contact__form--input">
+            <label for="lastName" class="contact__form--label">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="contact__form--input">
+            <label for="mail" class="contact__form--label">Email</label>
+            <input type="email" id="mail" name="mail" class="contact__form--input">
+            <label for="msg" class="contact__form--label">Message</label>
+            <textarea name="msg" id="msg" class="contact__form--msg"></textarea>
             <div class="contact__btns">
               <button class="contact__btn" type="submit">Send Message</button>
               <button class="contact__btn" type="reset">Reset</button>
             </div>
           </form>
-        </div>    
+        </section>
       </main>     
     </div>
     <script src="js/index.js"></script>
