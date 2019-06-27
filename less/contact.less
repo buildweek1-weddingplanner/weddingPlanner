@@ -1,0 +1,112 @@
+.container-contact {
+  .boxShadow();
+  .flex(row, center, space-evenly);
+  width: 80%;
+  padding: 5rem;
+  margin: 1rem auto 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  @media @header-tablet {
+    .flex(column);
+  }
+  @media @contact-450 {
+    border: none;
+  }
+}
+
+.blurb {
+  .flex(column);
+  width: 50%;
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__copy {
+    width: 70%;
+    font-size: 2rem;
+    line-height: 1.5;
+    @media @contact-550 {
+      width: 100%;
+    }
+  }
+  @media @header-tablet {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+
+.contact {
+  width: 50%;
+  &__form {
+    .flex(column);
+  }
+  &__field {
+    .flex(column, flex-start);
+    @media @contact-450 {
+      align-items: center;
+    }
+  }
+  &__label {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    @media @contact-450 {
+      align-self: flex-start;
+    }
+  }
+  &__input,
+  &__msg {
+    .boxShadow();
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  &__input {
+    height: 2rem;
+    width: 30rem;
+
+    margin-bottom: 2rem;
+  }
+  &__msg {
+    .boxShadow();
+    height: 20rem;
+    width: 40rem;
+    @media @contact-450 {
+      width: 30rem;
+    }
+  }
+  &__btns {
+    margin-top: 2rem;
+  }
+  &__btn {
+    all: unset;
+    .boxShadow();
+    padding: 1rem 2rem;
+    background: @bg-cta;
+    font-size: 2rem;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    &:hover {
+      background: @bg-cta-hover;
+      transition: background-color 300ms;
+    }
+    &:active {
+      box-shadow: none;
+      transition: box-shadow 300ms;
+    }
+  }
+  @media @header-tablet {
+    width: 100%;
+  }
+}
+
+.thanks {
+  width: 100%;
+  margin-top: 15rem;
+  text-align: center;
+
+  &__copy {
+    font-size: 4rem;
+  }
+}
