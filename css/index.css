@@ -715,6 +715,33 @@ body {
     justify-content: center;
   }
 }
+.dropdown {
+  display: none;
+}
+.dropdown li {
+  height: 75px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.dropdown li i {
+  width: 30%;
+  text-align: center;
+  font-size: 4.2rem;
+  color: #5e81ac;
+}
+.dropdown li .product-btn:hover {
+  text-decoration: underline;
+}
+.dropdown li:nth-child(1) {
+  margin-top: 10px;
+}
+.dropdown li:nth-child(n+1) {
+  border-top: 1px solid gray;
+}
+.active {
+  display: block;
+}
 .review-intro {
   display: flex;
   flex-direction: column;
