@@ -649,6 +649,12 @@ body {
   box-shadow: 1.5px 2.5px 2px 0px rgba(59, 66, 82, 0.4);
   color: #5e81ac;
 }
+.icons .icon i.fa-calendar-alt {
+  padding: 18px 20px;
+}
+.icons .icon i.fa-clipboard-list {
+  padding: 18px 22px;
+}
 .icons .icon p {
   font-weight: bold;
   font-size: 1.3rem;
@@ -765,25 +771,41 @@ footer .copyright {
   padding-top: 40px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  footer .copyright {
+    padding-top: 0;
+  }
+}
 .footer-categories {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
 }
-.footer-categories .category h5 {
+@media (max-width: 500px) {
+  .footer-categories {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .category {
+    margin-bottom: 30px;
+  }
+}
+.category h5 {
   font-weight: bold;
   font-size: 1.8rem;
   text-decoration: underline;
 }
-.footer-categories .category li {
+.category li {
   margin: 20px 0;
 }
-.footer-categories .category a {
+.category a {
   text-decoration: none;
   color: black;
 }
-.footer-categories .category a:hover {
+.category a:hover {
   text-decoration: underline;
   cursor: pointer;
 }

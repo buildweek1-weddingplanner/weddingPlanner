@@ -5,6 +5,10 @@ footer {
   .copyright{
     padding-top: 40px;
     text-align: center;
+
+    @media @mobile {
+      padding-top: 0;
+    }
   }
 }
 
@@ -12,28 +16,36 @@ footer {
   .flex(row, flex-start, space-evenly);
 
   @media @mobile {
-    
+    flex-direction: column;
+    margin-left: 50px;
+
+  }
+}
+
+
+
+.category {
+  @media @mobile {
+    margin-bottom: 30px;
   }
 
-  .category {
-    h5 {
-      font-weight: bold;
-      font-size: 1.8rem;
+  h5 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-decoration: underline;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
       text-decoration: underline;
-    }
-
-    li {
-      margin: 20px 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
+      cursor: pointer;
     }
   }
 }
