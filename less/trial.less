@@ -38,15 +38,14 @@
 
 .card-selected {
   .boxShadow();
-  padding: 30px 30px;;
   background-color: @card;
-  width: 25%;
+  width: 400px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #5e81ac;
   margin: 0 30px;
   overflow: hidden;
-  height: 400px;
+  height: 430px;
   transition: all 600ms ease;
 
 
@@ -54,41 +53,58 @@
     width: 80%;
     margin: 20px auto;
   }
+
+  img {
+    border-radius: 10px 10px 0 0;
   
+  }
+
+  i {
+    color: #5e81ac;
+    font-size: 1.8rem;
+    padding: 8px 0;
+  }
+
   .card-title {
     .card-header();
+    color: #5e81ac;
+    font-size: 2rem;
     margin-bottom: 15px;
   }
 
-  img {
-    border-radius: 10px;
-  
-  }
-  h3 {
-    .card-header();
-    margin: 20px 0;
-  }
+  .card-description {
+    padding: 10px;
 
-  .card-button {
-    font-size: 1.3rem;
-    cursor: pointer;
-    
-    &:hover {
-    text-decoration: underline;
+    h3 {
+      .card-header();
+      color: @text-normal;
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    .card-button {
+      font-size: 1.3rem;
+      cursor: pointer;
+      
+      &:hover {
+      text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-top: 30px;
+      line-height: 22px;
+      font-size: 1.9rem;
     }
   }
 
-  p {
-    margin-top: 30px;
-    line-height: 22px;
-    font-size: 1.9rem;
-  }
+  
 }
 .close {
   margin-top: 15px;
 }
 .open-card {
-  height: 650px;
+  height: 700px;
   transition: all 600ms ease;
 }
 .hide-btn {
