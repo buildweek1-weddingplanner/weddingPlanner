@@ -14,6 +14,8 @@
   margin: 30px 0;
   
   button {
+    .boxShadow();
+
     margin-right: 20px;
     width: 20rem;
     padding: 10px 0;
@@ -27,7 +29,58 @@
   .try-btn {
     background-color: transparent;
     border-color: black;
+
+    @media @mobile {
+      margin-bottom: 15px;
+    }
   }
+
+  .explore{
+    background-color: white;
+  } 
+
+  @media @mobile {
+    .flex(column);
+  }
+}
+
+.dropdown {
+  display: none;
+
+  li {
+    height: 75px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+        
+    i {
+      width: 30%;
+      text-align: center;
+      font-size: 4.2rem;
+      color: #5e81ac;
+    }
+
+    .product-btn {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+    
+    &:nth-child(n+1) {
+      border-top: 1px solid gray;
+
+    }
+
+  }
+
+}
+
+.active {
+  display: block;
 }
 
 .review-intro {
@@ -43,6 +96,10 @@
 
     span {
       color: #5e81ac;
+    }
+
+    @media @mobile {
+      font-size: 2.2rem;
     }
   }
 
@@ -67,6 +124,15 @@
     p {
       font-size: 1.6rem;
     }
+
+    @media @mobile {
+      border-top: none;
+      padding-top: 15px;
+    }
+  }
+
+  @media @mobile {
+    margin-top: 60px;
   }
 }
 
@@ -102,6 +168,17 @@
       font-weight: bold;
       text-align: right;
       color: #5e81ac;
+
+      @media @mobile {
+        width: 80%;
+      }
+    }
+
+    @media @mobile {
+      .flex(column);
+      width: 80%;
+      padding-bottom: 45px;
+      
     }
   }
 }
