@@ -675,6 +675,24 @@ body {
     width: 160px;
   }
 }
+.header-imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header-imgs img {
+  width: 300px;
+  min-width: 300px;
+  border-radius: 15px;
+}
+.header-imgs img:nth-child(2) {
+  margin-top: 80px;
+}
+.header-imgs img:nth-child(4) {
+  margin-top: 80px;
+}
 .testimonials-intro {
   margin-top: 70px;
   display: flex;
