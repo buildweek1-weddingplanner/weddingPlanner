@@ -569,7 +569,6 @@ body {
   color: #88c0d0;
   color: #5e81ac;
   font-size: 2rem;
-  margin-bottom: 15px;
 }
 .card-selected .card-description {
   padding: 10px;
@@ -1073,4 +1072,16 @@ footer .copyright {
 .category a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.border {
+  width: 90%;
+  border-top: 1px dashed #5e81ac;
+  margin: 20px auto;
+}
+div.contact,
+.border {
+  margin-top: 60px;
+}
+.landing-footer {
+  padding-top: 30px;
 }
