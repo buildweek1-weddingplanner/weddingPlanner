@@ -1,89 +1,143 @@
-.container-contact {
-  .boxShadow();
-  .flex(row, center, space-evenly);
-  width: 80%;
-  padding: 5rem;
-  margin: 1rem auto 0;
-  border: 1px solid black;
-  border-radius: 5px;
-  @media @header-tablet {
-    .flex(column);
-  }
-  @media @contact-450 {
-    border: none;
-  }
+.main-contact {
+  .flex(column);
 }
 
-.blurb {
+.about {
   .flex(column);
-  width: 50%;
+  width: 80%;
+  padding: 5rem;
+  margin: 3rem auto 0;
+  border-radius: 5px;
+  color: #2e3440;
   &__title {
     margin-bottom: 3rem;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
   }
-  &__copy {
-    width: 70%;
-    font-size: 2rem;
-    line-height: 1.5;
-    @media @contact-550 {
-      width: 100%;
+  &__team {
+    .flex(row, center, space-evenly);
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 5rem;
+    border-radius: 5px;
+  }
+  &__teamMember {
+    .flex(column);
+    .boxShadow();
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 2rem;
+    background: rgba(46, 52, 64, 1);
+    border: 1px solid rgba(229, 233, 240, 0.3);
+    border-radius: 5px;
+    @media @contact-915 {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
     }
   }
-  @media @header-tablet {
+  &__img,
+  &__name,
+  &__desc {
+    margin-bottom: 2.5rem;
+    color: #d8dee9;
+    text-align: center;
+  }
+  &__img {
+    .boxShadow();
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+  }
+  &__name {
+    font-size: 2rem;
+  }
+  &__desc {
+    width: 70%;
+    font-size: 1.8rem;
+  }
+  &__socials {
+    .flex(row, center, space-evenly);
     width: 100%;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    &--btn {
+      .flex(column);
+      width: 2rem;
+      height: 2rem;
+      padding: 1rem;
+      color: #d8dee9;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    &--icon {
+      color: #88c0d0;
+      font-size: 4rem;
+      &:hover {
+        color: darken((#88c0d0), 15%);
+        transform: translateY(3px) scale(1.1);
+        transition: color 150ms, transform 300ms;
+      }
+    }
+    &--text {
+      font-size: 1.2rem;
+    }
   }
 }
 
 .contact {
-  width: 50%;
+  .flex(column);
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
   &__form {
     .flex(column);
-  }
-  &__field {
-    .flex(column, flex-start);
-    @media @contact-450 {
-      align-items: center;
-    }
-  }
-  &__label {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    @media @contact-450 {
-      align-self: flex-start;
-    }
-  }
-  &__input,
-  &__msg {
-    .boxShadow();
-    padding: 1rem;
+    padding: 4rem;
+    background: rgba(46, 52, 64, 1);
+    border: 1px solid rgba(229, 233, 240, 0.3);
     border-radius: 5px;
-    font-size: 2rem;
-  }
-  &__input {
-    height: 2rem;
-    width: 30rem;
-
-    margin-bottom: 2rem;
-  }
-  &__msg {
-    .boxShadow();
-    height: 20rem;
-    width: 40rem;
-    @media @contact-450 {
-      width: 30rem;
+    color: #d8dee9;
+    &--label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+      font-size: 1.6rem;
     }
-  }
-  &__btns {
-    margin-top: 2rem;
+    &--input,
+    &--msg {
+      .boxShadow();
+      padding: 5px;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      font-size: 1.6rem;
+    }
+    &--input {
+      height: 20px;
+      width: 300px;
+      @media @contact-450 {
+        width: 100%;
+      }
+    }
+    &--msg {
+      height: 200px;
+      width: 400px;
+      @media @contact-450 {
+        width: 100%;
+      }
+    }
   }
   &__btn {
     all: unset;
-    .boxShadow();
     padding: 1rem 2rem;
+    margin-top: 2rem;
     background: @bg-cta;
+    box-shadow: 1.5px 2.5px 2px 0px rgba(216, 222, 233, 0.3);
+    color: #2e3440;
     font-size: 2rem;
+    font-weight: 600;
     &:not(:last-child) {
       margin-right: 4rem;
     }
@@ -95,9 +149,6 @@
       box-shadow: none;
       transition: box-shadow 300ms;
     }
-  }
-  @media @header-tablet {
-    width: 100%;
   }
 }
 
