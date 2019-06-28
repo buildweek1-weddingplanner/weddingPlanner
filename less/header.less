@@ -282,13 +282,16 @@
 
 .header {
   background: orange;
-  .flex(row, center, space-between);
+  .flex(row, center, space-around);
   position: fixed;
   top: 0;
   height: 15%;
   width: 100%;
   padding: 1rem;
   z-index: 1000;
+  @media @header-760 {
+    // .flex(column);
+  }
   &__title {
     background: lightgray;
     .link();
@@ -299,13 +302,16 @@
     @media @header-tablet {
       width: 50%;
     }
+    @media @header-760 {
+      width: 100%;
+      margin: 47px auto 0;
+      text-align: center;
+    }
   }
   &__cta {
-    background: hotpink;
     .link();
     .boxShadow();
     padding: 10px 20px;
-    margin-left: 4rem;
     background: @bg-cta;
     border-radius: 3px;
     color: @color-link;
@@ -325,29 +331,34 @@
       position: fixed;
       right: 15rem;
     }
+    @media @header-760 {
+      position: static;
+    }
   }
   &__nav {
     background: lightgray;
-    .flex(row, center, space-between);
+    .flex(row, center, space-evenly);
     width: 25%;
     @media @header-tablet {
-      .flex(column, center, space-evenly);
-      margin-top: 75rem;
-      height: 100vh;
+      .flex(column);
+      position: relative;
+      top: 14vh;
       width: 50%;
-      background: #4c566a;
       overflow-x: hidden;
-      transform: translateX(100%);
+      // transform: translateX(200%);
       transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      @media @header-760 {
+        width: 100%;
+      }
     }
     &--item {
       @media @header-tablet {
-        width: 100%;
-        padding: 10rem;
-        text-align: center;
-        &:not(:last-child) {
-          border-bottom: 2px solid #3b4252;
-        }
+        // width: 100%;
+        // padding: 10rem;
+        // text-align: center;
+        // &:not(:last-child) {
+        // border-bottom: 2px solid #3b4252;
+        // }
       }
     }
     &--link {
@@ -364,6 +375,25 @@
       &:hover {
         border-bottom: 2px solid #3b4252;
       }
+      @media @header-tablet {
+        background: #3b4252;
+        width: 100%;
+        padding: 3rem;
+        color: #e5e9f0;
+        text-align: center;
+        &:not(:last-child) {
+          border-bottom: 1px solid #3b4252;
+        }
+        &:hover {
+          border-bottom: none;
+          &:not(:last-child) {
+            border-bottom: 1px solid #3b4252;
+          }
+        }
+      }
+      @media @header-760 {
+        width: 100%;
+      }
     }
     &--active {
       transform: translateX(0);
@@ -377,7 +407,7 @@
       display: block;
       position: fixed;
       .flex(column);
-      top: 25px;
+      top: 4.7rem;
       right: 50px;
       z-index: 1000;
       height: 60px;
