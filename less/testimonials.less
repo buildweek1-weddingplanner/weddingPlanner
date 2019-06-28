@@ -1,23 +1,48 @@
 .header-imgs {
   .flex();
+  flex-wrap: wrap;
   width: 100%;
 
   img {
     width: 300px;
-    min-width: 300px;
     border-radius: 15px;
+
+    @media @mobile {
+      width: 200px;
+    }
+    
 
     &:nth-child(2) {
       margin: 80px 15px 0 15px;
 
+      @media @tablet {
+        margin: 0 0 0 15px;
+      }
+
+    }
+    
+    &:nth-child(-n+2) {
+      
+      @media @tablet {
+        margin-bottom: 20px;
+      }
     }
 
     &:nth-child(4){
       margin-top: 80px;
       margin-left: 15px;
+
+      @media @tablet {
+        margin-top: 0;
+      }
     }
   }
   
+  @media @tablet {
+    width: 90%;
+    margin: auto;
+  }
+
 }
 
 .testimonials-intro {

@@ -680,19 +680,45 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 .header-imgs img {
   width: 300px;
-  min-width: 300px;
   border-radius: 15px;
+}
+@media (max-width: 685px) {
+  .header-imgs img {
+    width: 200px;
+  }
 }
 .header-imgs img:nth-child(2) {
   margin: 80px 15px 0 15px;
 }
+@media (max-width: 950px) {
+  .header-imgs img:nth-child(2) {
+    margin: 0 0 0 15px;
+  }
+}
+@media (max-width: 950px) {
+  .header-imgs img:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+}
 .header-imgs img:nth-child(4) {
   margin-top: 80px;
   margin-left: 15px;
+}
+@media (max-width: 950px) {
+  .header-imgs img:nth-child(4) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 950px) {
+  .header-imgs {
+    width: 90%;
+    margin: auto;
+  }
 }
 .testimonials-intro {
   margin-top: 70px;
