@@ -688,10 +688,11 @@ body {
   border-radius: 15px;
 }
 .header-imgs img:nth-child(2) {
-  margin-top: 80px;
+  margin: 80px 15px 0 15px;
 }
 .header-imgs img:nth-child(4) {
   margin-top: 80px;
+  margin-left: 15px;
 }
 .testimonials-intro {
   margin-top: 70px;
