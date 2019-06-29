@@ -3,7 +3,7 @@ class ScrollEffects {
     this.element = element;
     this.headerBackground = this.element.querySelector(".header-container");
     this.titleColor = this.headerBackground.querySelector(".header__title");
-    this.linkNav = this.element.querySelectorAll(`.header__nav--link`).forEach(link => new NavLink(link));
+    this.linkNav = this.element.querySelectorAll(`.nav__link`).forEach(link => new NavLink(link));
     window.addEventListener("scroll", () => this.scrollEffects());
   }
   scrollEffects() {
