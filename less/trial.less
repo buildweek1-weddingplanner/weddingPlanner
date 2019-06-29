@@ -50,6 +50,7 @@
   @media @mobile {
     width: 80%;
     margin: 20px auto;
+    height: 525px;
   }
 
   img {
@@ -100,6 +101,10 @@
 .open-card {
   height: 700px;
   transition: all 600ms ease;
+
+  @media @mobile {
+    height: 715px;
+  }
 }
 .hide-btn {
   display: none;
@@ -139,9 +144,15 @@
 
 .icons {
   .flex();
+  flex-wrap: wrap;
 
   .icon {
     margin: 15px;
+
+
+
+    width: 150px;
+    
 
     i {
       .tool-icons();
@@ -151,16 +162,20 @@
     }
 
     i.fa-calendar-alt {
-      padding: 18px 20px;
+      padding: 18px 20.5px;
     }
 
     i.fa-clipboard-list {
-      padding: 18px 22px;
+      padding: 18px 22.5px;
     }
 
     p {
       font-weight: bold;
       font-size: 1.3rem;
+    }
+
+    @media @mobile {
+      width: 160px;
     }
   }
 }
