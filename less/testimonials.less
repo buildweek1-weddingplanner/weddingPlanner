@@ -2,6 +2,10 @@
   .flex();
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 125px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   img {
     width: 300px;
@@ -40,13 +44,15 @@
   
   @media @tablet {
     width: 90%;
-    margin: auto;
+    margin-top: 150px;
   }
 
 }
 
 .testimonials-intro {
   .page-intro();
+  margin: 0 auto;
+  width: 90%;
 
   h1 {
     .h1-font();
@@ -63,7 +69,7 @@
 
     @media @mobile {
       font-size: 2.5rem;
-      margin-top: 50px;
+      margin: 0 auto;
     }
   }
 
@@ -75,9 +81,6 @@
     }
   }
 
-  @media @mobile {
-    margin: 0px 20px;
-  }
 }
 
 .testimonials-btn {
@@ -108,8 +111,6 @@
 
   .explore {
     background-color: white;
-
-  }
     outline: 0px;
   } 
 
