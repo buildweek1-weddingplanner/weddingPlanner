@@ -699,14 +699,14 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
 }
-@media (max-width: 500px) {
-  .icons .icon {
-    width: 160px;
-  }
-}
 @media (max-width: 800px) {
   .icons .icon {
     width: 190px;
+  }
+}
+@media (max-width: 500px) {
+  .icons .icon {
+    width: 160px;
   }
 }
 .header-imgs {
@@ -769,11 +769,6 @@ body {
 }
 .testimonials-intro h1 {
   font-size: 4rem;
-}
-@media (max-width: 500px) {
-  .testimonials-intro h1 br {
-    display: none;
-  }
 }
 @media (max-width: 800px) {
   .testimonials-intro h1 br {
@@ -873,11 +868,6 @@ body {
   text-align: center;
   line-height: 25px;
   padding-bottom: 30px;
-}
-@media (max-width: 500px) {
-  .review-intro h2 br {
-    display: none;
-  }
 }
 @media (max-width: 800px) {
   .review-intro h2 br {
@@ -1176,12 +1166,6 @@ footer .copyright {
   align-items: flex-start;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
-  .footer-categories {
-    flex-direction: column;
-    margin-left: 50px;
-  }
-}
 @media (max-width: 800px) {
   .footer-categories {
     flex-wrap: wrap;
@@ -1190,14 +1174,9 @@ footer .copyright {
   }
 }
 @media (max-width: 500px) {
-  .category {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 800px) {
-  .category {
-    width: 40%;
-    padding-bottom: 20px;
+  .footer-categories {
+    flex-direction: column;
+    margin-left: 50px;
   }
 }
 .category h5 {
@@ -1215,6 +1194,18 @@ footer .copyright {
 .category a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .category {
+    width: 40%;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .category {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }
 .border {
   width: 90%;

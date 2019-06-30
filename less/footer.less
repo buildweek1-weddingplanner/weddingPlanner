@@ -15,29 +15,20 @@ footer {
 .footer-categories {
   .flex(row, flex-start, space-evenly);
 
-  @media @mobile {
-    flex-direction: column;
-    margin-left: 50px;
-
-  }
-
   @media @tablet {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
   }
+
+  @media @mobile {
+    flex-direction: column;
+    margin-left: 50px;
+
+  }
 }
 
 .category {
-  @media @mobile {
-    margin-bottom: 30px;
-  }
-  
-  @media @tablet {
-    width: 40%;
-    padding-bottom: 20px;
-  }
-
   h5 {
     font-weight: bold;
     font-size: 1.8rem;
@@ -56,6 +47,16 @@ footer {
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+  
+  @media @tablet {
+    width: 40%;
+    padding-bottom: 20px;
+  }  
+
+  @media @mobile {
+    margin-bottom: 30px;
+    width: 100%;
   }
 }
 
