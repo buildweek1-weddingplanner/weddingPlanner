@@ -1,9 +1,9 @@
 class ScrollEffects {
   constructor(element) {
     this.element = element;
-    this.headerBackground = this.element.querySelector(".header");
+    this.headerBackground = this.element.querySelector(".header-container");
     this.titleColor = this.headerBackground.querySelector(".header__title");
-    this.linkNav = this.element.querySelectorAll(`.header__link[data-tab='linkNav']`).forEach(link => new NavLink(link));
+    this.linkNav = this.element.querySelectorAll(`.nav__link`).forEach(link => new NavLink(link));
     window.addEventListener("scroll", () => this.scrollEffects());
   }
   scrollEffects() {
@@ -33,15 +33,11 @@ class NavLink {
 const scroll = document.querySelectorAll(".container-page").forEach(scroll => new ScrollEffects(scroll));
 
 const navSlide = () => {
-  const burger = document.querySelector(".header__burger");
-  const nav = document.querySelector(".header__nav");
-  const navLinks = document.querySelectorAll(".header__link");
+  const burger = document.querySelector(".nav__burger");
+  const nav = document.querySelector(".nav");
   burger.addEventListener("click", () => {
-    nav.classList.toggle("header__nav--active");
-    navLinks.forEach((link, index) => {
-      link.style.animation ? (link.style.animation = "") : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 3 + 0.1}s`);
-    });
     burger.classList.toggle("toggle");
+    nav.classList.toggle("nav__active");
   });
 };
 
