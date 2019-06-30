@@ -1,14 +1,14 @@
 .trial-intro {
   .page-intro();
+  margin-top: 150px;
 
   @media @mobile {
-    margin-top: 25px;
+    margin-top: 60px;
     padding: 0 15px;
   }
 
   h1 {
     .h1-font();
-    margin-top: 50px;
 
     span {
       color: #5e81ac;
@@ -22,6 +22,10 @@
 
   p {
     .header-p-font();
+  }
+
+  @media @mobile {
+    margin-top: 200px;
   }
 }
 
@@ -46,12 +50,6 @@
   overflow: hidden;
   height: 430px;
   transition: all 600ms ease;
-
-  @media @mobile {
-    width: 80%;
-    margin: 20px auto;
-    height: 525px;
-  }
 
   img {
     border-radius: 10px 10px 0 0;
@@ -93,6 +91,16 @@
       line-height: 22px;
       font-size: 1.9rem;
     }
+  }
+
+  @media @mobile {
+    width: 80%;
+    margin: 20px auto;
+    height: 410px;
+  } 
+
+  @media @tablet {
+    height: 390px;
   }
 }
 .close {
@@ -148,12 +156,8 @@
 
   .icon {
     margin: 15px;
-
-
-
     width: 150px;
     
-
     i {
       .tool-icons();
       .boxShadow();
@@ -176,6 +180,10 @@
 
     @media @mobile {
       width: 160px;
+    }
+
+    @media @tablet {
+      width: 190px;
     }
   }
 }
